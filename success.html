@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmed — Parent Reset</title>
+  <meta name="robots" content="noindex">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Calendly widget CSS -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body { min-height: 100svh; display: flex; flex-direction: column; }
+
+    .success-nav {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(250,247,242,0.96);
+    }
+    .success-nav a {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--charcoal);
+    }
+
+    .success-page {
+      flex: 1;
+      padding: 72px 24px 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .success__inner {
+      max-width: 680px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .success__check {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--sage);
+      color: #fff;
+      font-size: 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      box-shadow: 0 4px 20px rgba(122,158,126,0.35);
+    }
+
+    .success__eyebrow {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 12px;
+    }
+
+    .success__title {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .success__body {
+      color: var(--text-mid);
+      font-size: 1.0625rem;
+      line-height: 1.72;
+      margin-bottom: 52px;
+    }
+
+    .calendly-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px 32px;
+      text-align: left;
+      box-shadow: 0 4px 32px rgba(44,36,22,0.06);
+      margin-bottom: 40px;
+    }
+    .calendly-box h2 {
+      font-size: 1.375rem;
+      margin-bottom: 8px;
+    }
+    .calendly-box p {
+      color: var(--text-muted);
+      font-size: 0.9375rem;
+      margin-bottom: 24px;
+    }
+
+    /* Calendly widget container */
+    .calendly-inline-widget {
+      min-width: 280px;
+      height: 700px;
+    }
+
+    .success__footer-note {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+    .success__footer-note a { color: var(--terracotta); }
+
+    @media (max-width: 600px) {
+      .calendly-box { padding: 24px 16px; }
+      .calendly-inline-widget { height: 600px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="success-nav">
+  <a href="/">← Parent Reset</a>
+</nav>
+
+<main class="success-page">
+  <div class="success__inner">
+    <div class="success__check" aria-hidden="true">✓</div>
+    <p class="success__eyebrow">Payment confirmed</p>
+    <h1 class="success__title">
+      Things are shifting now.<br>
+      <em>You took the first step.</em>
+    </h1>
+    <p class="success__body">
+      You have done something important today. A confirmation email will arrive shortly.<br><br>
+      Now pick the time that works best for you below.
+      All sessions are 60 minutes on <strong>Google Meet</strong>.
+    </p>
+
+    <!-- ── CALENDLY EMBED ── -->
+    <div class="calendly-box">
+      <h2>Choose your session time</h2>
+      <p>All times shown in your local timezone.</p>
+
+      <!--
+        ╔══════════════════════════════════════════════════════╗
+        ║  SETUP: Replace YOUR_CALENDLY_LINK below             ║
+        ║  e.g. data-url="https://calendly.com/sharon-pr/60"  ║
+        ╚══════════════════════════════════════════════════════╝
+      -->
+      <div class="calendly-inline-widget"
+           data-url="https://calendly.com/YOUR_CALENDLY_LINK"
+           data-resize="true">
+      </div>
+    </div>
+
+    <p class="success__footer-note">
+      Questions? Email Sharon at
+      <a href="mailto:sharon@parentreset.com">sharon@parentreset.com</a>
+    </p>
+  </div>
+</main>
+
+<!-- Calendly widget JS — load after content -->
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
