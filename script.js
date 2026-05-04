@@ -1,5 +1,5 @@
 /* ============================================================
-   PARENT RESET — Main Script
+   PARENT CHILD RESET — Main Script
    ============================================================ */
 'use strict';
 
@@ -12,6 +12,16 @@ const fadeObserver = new IntersectionObserver(
   { threshold: 0.08, rootMargin: '0px 0px -32px 0px' }
 );
 document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
+
+// Immediately reveal elements already in the viewport (avoids blank flash)
+requestAnimationFrame(() => {
+  document.querySelectorAll('.fade-up').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('visible');
+    }
+  });
+});
 
 /* ── NAV SCROLL ──────────────────────────────────────────── */
 const nav = document.getElementById('nav');
@@ -250,7 +260,7 @@ if (bookingForm) {
     } catch(err) {
       checkoutBtn.classList.remove('btn--loading');
       checkoutBtn.innerHTML = 'Book &amp; pay to confirm &mdash; SGD <span class="price-display">180</span>';
-      showErr(err.message.includes('fetch') ? 'Network error. Please check your connection and try again.' : (err.message || 'Something went wrong. Please email sharon@parentreset.com'));
+      showErr(err.message.includes('fetch') ? 'Network error. Please check your connection and try again.' : (err.message || 'Something went wrong. Please email sharon@parentchildreset.com'));
     }
   });
 }
