@@ -1,235 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parent Reset — Stop Screaming. Stay Connected.</title>
-  <meta name="description" content="60-minute coaching for overwhelmed parents of sensitive children aged 5-8. Learn to stop yelling and reconnect with your child. Book a reset session with Sharon today.">
-  <meta property="og:title" content="Parent Reset — Stop Screaming. Even When Your Child Won't Listen.">
-  <meta property="og:description" content="A 60-minute reset for overwhelmed parents of sensitive kids 5-8. Feel the shift immediately.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=1200&q=80">
-  <meta name="twitter:card" content="summary_large_image">
+  <title>Parent Reset Sessions — Understand Your Child, Change What Happens Next</title>
+  <meta name="description" content="A 60-minute coaching session for parents who are tired of the same arguments. Walk away with a clear plan you can use right away.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <script src="https://js.stripe.com/v3/" async></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="nav" id="nav">
+<!-- ── NAV ───────────────────────────────────────────── -->
+<header id="nav" class="nav" role="banner">
   <div class="nav__inner">
-    <a href="/" class="nav__logo">Parent Reset</a>
-    <div class="nav__links">
-      <a href="#method">The Method</a>
-      <a href="#about">About Sharon</a>
-      <a href="#booking" class="nav__cta">Book a session</a>
-    </div>
-    <button class="nav__mobile-toggle" id="mobileToggle" aria-label="Open menu">
+    <a href="#" class="nav__logo">Parent Reset</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#testimonials">Stories</a>
+      <a href="#faq">FAQ</a>
+      <a href="#booking" class="nav__cta">Book a Session</a>
+    </nav>
+    <button id="mobileToggle" class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
-  <div class="nav__mobile-menu" id="mobileMenu">
-    <a href="#method">The Method</a>
-    <a href="#about">About Sharon</a>
-    <a href="#booking">Book a session</a>
-  </div>
-</nav>
+  <nav id="mobileMenu" class="nav__mobile-menu" aria-label="Mobile">
+    <a href="#about">About</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#testimonials">Stories</a>
+    <a href="#faq">FAQ</a>
+    <a href="#booking" class="nav__mobile-cta">Book a Session</a>
+  </nav>
+</header>
 
-<section class="hero" id="hero">
-  <div class="hero__content fade-up">
-    <p class="hero__eyebrow">For parents of sensitive children &middot; Ages 5&ndash;8</p>
-    <h1 class="hero__headline">Stop screaming.<br><em>Even when your child<br>won't listen.</em></h1>
-    <p class="hero__subheadline">A 3-minute reset for overwhelmed parents of sensitive kids (5&ndash;8) so you can stay connected, not reactive.</p>
-    <div class="hero__ctas">
-      <a href="#booking" class="btn btn--primary">Book a reset session</a>
-      <button class="btn btn--ghost" id="openChatbot">Try a 3-minute reset now</button>
-    </div>
-    <p class="hero__trust">You don't need to fix your child. You need a way back to yourself.</p>
+<!-- ── HERO ──────────────────────────────────────────── -->
+<section class="hero-section" aria-label="Introduction">
+  <div class="hero-bg">
+    <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663622236977/cHfrDUgtK85iW5KmCqoJRC/hero-parent-coaching-U6rQU9TkdK4Ua3Gab8teph.webp"
+         alt="Parent at kitchen table, thoughtful morning moment"
+         class="hero-bg__img" loading="eager">
+    <div class="hero-bg__overlay"></div>
   </div>
-  <div class="hero__image fade-up fade-up--delay">
-    <div class="hero__img-frame">
-      <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" alt="A parent and child sharing a calm, connected moment" loading="eager" width="800" height="600">
+  <div class="container hero-section__inner">
+    <p class="eyebrow fade-up">60-Minute Parent Reset Sessions</p>
+    <h1 class="hero-section__h1 fade-up">
+      Your child isn&rsquo;t broken.<br>
+      <em class="hero-section__em">Something else</em> is happening.
+    </h1>
+    <p class="hero-section__body fade-up fade-up--delay">
+      Most parents think their child is not listening or not trying.
+      In many cases, the child can&rsquo;t access what they know in that moment.
+    </p>
+    <div class="hero-section__ctas fade-up fade-up--delay">
+      <a href="#booking" class="btn btn--primary">Book a Reset Session</a>
+      <a href="#how-it-works" class="btn btn--outline">See How It Works</a>
     </div>
+    <p class="hero-section__trust fade-up fade-up--delay">
+      7 years in classrooms &middot; Sessions via Google Meet &middot; Limited spots this week
+    </p>
   </div>
 </section>
 
-<section class="emotional-mirror">
+<!-- ── STATS BAR ──────────────────────────────────────── -->
+<div class="stats-bar">
   <div class="container">
-    <div class="mirror__inner fade-up">
-      <p class="mirror__lead">You love your child deeply<br>and still end up shouting.</p>
-      <p class="mirror__text">You walk away and cry quietly.</p>
-      <div class="mirror__questions">
-        <p>You wonder:</p>
-        <ul>
-          <li><em>Is something wrong with my child?</em></li>
-          <li><em>Am I ruining them?</em></li>
-        </ul>
-      </div>
-      <div class="mirror__divider" aria-hidden="true">&mdash; &there4; &mdash;</div>
-      <div class="mirror__closing">
-        <p>You are not alone.</p>
-        <p>And this is not where your story ends.</p>
-      </div>
+    <div class="stats-bar__inner">
+      <div class="stat"><span class="stat__value">7+</span><span class="stat__label">Years in classrooms</span></div>
+      <div class="stat"><span class="stat__value">60 min</span><span class="stat__label">Focused session</span></div>
+      <div class="stat"><span class="stat__value">Clear plan</span><span class="stat__label">You leave with</span></div>
+      <div class="stat"><span class="stat__value">Google Meet</span><span class="stat__label">Easy, from home</span></div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="authority" id="approach">
-  <div class="container container--split">
-    <div class="authority__image fade-up">
-      <img src="https://images.unsplash.com/photo-1491013516836-7db643ee125a?auto=format&fit=crop&w=700&q=80" alt="A child in a moment of gentle connection" loading="lazy" width="700" height="500">
-    </div>
-    <div class="authority__content fade-up fade-up--delay">
-      <span class="section-label">What makes this different</span>
-      <h2>I see what others miss.</h2>
-      <p>I have worked inside classrooms and seen how children get labelled, misunderstood, and slowly disconnected from themselves.</p>
-      <p>I do not just look at behaviour.</p>
-      <p>I see sensory needs, learning differences, and what happens over time &mdash; the whole education period &mdash; if nothing changes.</p>
-      <blockquote class="pull-quote">This is not about control.<br>It is about connection that actually works.</blockquote>
-    </div>
-  </div>
-</section>
-
-<section class="belief">
+<!-- ── 3 REASONS ──────────────────────────────────────── -->
+<section class="reasons" id="why">
   <div class="container">
-    <div class="belief__inner fade-up">
-      <div class="ornament" aria-hidden="true">&#10022;</div>
-      <p class="belief__statement">Most parenting advice fails because it tries to control the child using pressure, fear, or reward systems.</p>
-      <div class="belief__contrast">
-        <p>I do not train your child.</p>
-        <p class="belief__anchor">I help you understand your child.</p>
+    <div class="reasons__header">
+      <span class="section-rule"></span>
+      <h2 class="fade-up">It&rsquo;s usually a mix of three things.</h2>
+    </div>
+    <div class="reasons__grid">
+      <div class="reason fade-up">
+        <span class="reason__number">01</span>
+        <h3>Overload</h3>
+        <p>Their nervous system is already at capacity. What looks like defiance is often a child who has nothing left to give in that moment.</p>
       </div>
+      <div class="reason fade-up">
+        <span class="reason__number">02</span>
+        <h3>Learning Style Mismatch</h3>
+        <p>The way they&rsquo;re being asked to learn, respond, or behave doesn&rsquo;t match how their brain actually works. It&rsquo;s not laziness &mdash; it&rsquo;s friction.</p>
+      </div>
+      <div class="reason fade-up">
+        <span class="reason__number">03</span>
+        <h3>Pressure in the Relationship</h3>
+        <p>When the same moments keep repeating, tension builds on both sides. The relationship itself starts to become the trigger.</p>
+      </div>
+    </div>
+    <div class="reasons__quote fade-up">
+      <blockquote>
+        &ldquo;I spent 7 years in classrooms and now help parents figure out what&rsquo;s actually happening &mdash; and what to change immediately.&rdquo;
+      </blockquote>
     </div>
   </div>
 </section>
 
-<section class="method" id="method">
+<!-- ── ABOUT ──────────────────────────────────────────── -->
+<section class="about-section" id="about">
   <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-label">The reset process</span>
-      <h2>What happens in a reset</h2>
-    </div>
-    <div class="method__steps">
-      <div class="method__step fade-up">
-        <div class="step__number">01</div>
-        <div class="step__content">
-          <h3>Find the friction</h3>
-          <p>What is the exact moment that keeps breaking you?</p>
+    <div class="about-section__inner">
+      <div class="about-section__content fade-up">
+        <span class="section-rule"></span>
+        <p class="eyebrow">About Your Coach</p>
+        <h2>I&rsquo;ve seen this from both sides of the table.</h2>
+        <div class="about-section__body">
+          <p>After 7 years working directly with children in classrooms &mdash; including kids with learning differences, behavioural challenges, and complex home situations &mdash; I started to see the same patterns playing out in family after family.</p>
+          <p>Parents who were trying everything. Children who couldn&rsquo;t explain why they were struggling. And a gap between them that nobody knew how to close.</p>
+          <p>I now work directly with parents to bridge that gap. Not with more strategies or behaviour charts &mdash; but by helping you understand what&rsquo;s actually driving the behaviour, so you can respond in a way that actually works.</p>
         </div>
-      </div>
-      <div class="method__connector" aria-hidden="true">&darr;</div>
-      <div class="method__step fade-up">
-        <div class="step__number">02</div>
-        <div class="step__content">
-          <h3>Name the wish</h3>
-          <p>What do you wish would happen instead?</p>
-        </div>
-      </div>
-      <div class="method__connector" aria-hidden="true">&darr;</div>
-      <div class="method__step fade-up">
-        <div class="step__number">03</div>
-        <div class="step__content">
-          <h3>Face the fear</h3>
-          <p>What are you really afraid this means about your child?</p>
+        <div class="about-section__tags">
+          <span class="tag">7 Years Classroom Experience</span>
+          <span class="tag">Learning Differences Specialist</span>
+          <span class="tag">Practical, Action-Focused</span>
         </div>
       </div>
     </div>
-    <p class="method__result fade-up">This is where the grip starts to loosen.</p>
-    <div class="method__cta fade-up">
-      <button class="btn btn--ghost" id="openChatbot2">Try the 3-minute reset now &rarr;</button>
-    </div>
   </div>
 </section>
 
-<section class="offer" id="offer">
-  <div class="container container--narrow">
-    <div class="offer__inner fade-up">
-      <span class="section-label">The session</span>
-      <h2>One session. Real shift.</h2>
-      <p class="offer__description">A 60-minute coaching session on Google Meet where we work through one real situation together.</p>
-      <p class="offer__outcomes-label">You will leave with:</p>
-      <ul class="offer__list">
-        <li>A way to stop yelling in the moment</li>
-        <li>A way to reconnect with your child</li>
-        <li>A personalised approach based on how your child actually works</li>
-      </ul>
-      <div class="offer__expectation">
-        <p>This will not fix everything in one session.</p>
-        <p><strong>But you will feel the shift immediately.</strong></p>
-      </div>
-      <a href="#booking" class="btn btn--primary offer__cta">Book your reset session</a>
-    </div>
-  </div>
-</section>
-
-<section class="transformation">
-  <div class="container container--narrow">
-    <div class="transformation__inner fade-up">
-      <p>After working with me, you will be able to move the needle on the exact moment that keeps triggering you &mdash; even when your child is not cooperating.</p>
-    </div>
-  </div>
-</section>
-
-<section class="testimonials">
+<!-- ── HOW IT WORKS ───────────────────────────────────── -->
+<section class="how-section" id="how-it-works">
   <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-label">What parents say</span>
-      <h2>They started where you are.</h2>
+    <div class="how-section__grid">
+      <div class="how-section__content">
+        <span class="section-rule"></span>
+        <p class="eyebrow">The Session</p>
+        <h2 class="fade-up">One focused conversation. A clear plan you can use right away.</h2>
+        <div class="how-section__steps">
+          <div class="step fade-up">
+            <div class="step__label">
+              <span class="step__tag">Before</span>
+              <div class="step__line"></div>
+            </div>
+            <div class="step__text">
+              <h3>You send a brief message</h3>
+              <p>Just a few lines about what&rsquo;s been happening. No forms, no questionnaires. I want to hear it in your words.</p>
+            </div>
+          </div>
+          <div class="step fade-up">
+            <div class="step__label">
+              <span class="step__tag">During</span>
+              <div class="step__line"></div>
+            </div>
+            <div class="step__text">
+              <h3>60 minutes on Google Meet</h3>
+              <p>We go deep on the specific situation. I&rsquo;ll ask questions that help you see what you haven&rsquo;t been able to see. We map the pattern together.</p>
+            </div>
+          </div>
+          <div class="step fade-up">
+            <div class="step__label">
+              <span class="step__tag">After</span>
+              <div class="step__line"></div>
+            </div>
+            <div class="step__text">
+              <h3>You leave with a plan</h3>
+              <p>Not a list of tips. A specific, practical approach tailored to your child &mdash; something you can try tonight.</p>
+            </div>
+          </div>
+        </div>
+        <div class="how-section__cta fade-up">
+          <a href="#booking" class="btn btn--primary">Request a Session</a>
+        </div>
+      </div>
+      <div class="how-section__aside fade-up">
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663622236977/cHfrDUgtK85iW5KmCqoJRC/session-call-Mx8thoTSWwsEehxbdvZUdC.webp"
+             alt="Parent coaching session on Google Meet" class="how-section__img" loading="lazy">
+        <div class="how-section__quote-card">
+          <p class="how-section__quote-text">&ldquo;I&rsquo;m opening a few 60-min parent reset sessions this week.&rdquo;</p>
+          <p class="how-section__quote-sub">Limited spots available</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── OUTCOMES ───────────────────────────────────────── -->
+<section class="outcomes">
+  <div class="container">
+    <div class="outcomes__header">
+      <span class="section-rule outcomes__rule"></span>
+      <h2>What you&rsquo;ll leave with</h2>
+      <p>This isn&rsquo;t a consultation. It&rsquo;s a working session.</p>
+    </div>
+    <div class="outcomes__grid">
+      <div class="outcome-card fade-up">
+        <span class="outcome-card__icon">&bull;</span>
+        <h3>Clarity</h3>
+        <p>A clear understanding of what&rsquo;s actually driving your child&rsquo;s behaviour &mdash; not guesswork.</p>
+      </div>
+      <div class="outcome-card fade-up">
+        <span class="outcome-card__icon">&bull;</span>
+        <h3>A Specific Plan</h3>
+        <p>Not generic advice. A tailored approach for your child, your situation, your family.</p>
+      </div>
+      <div class="outcome-card fade-up">
+        <span class="outcome-card__icon">&bull;</span>
+        <h3>Immediate Actions</h3>
+        <p>Things you can try tonight. Not in six weeks after reading a book.</p>
+      </div>
+      <div class="outcome-card fade-up">
+        <span class="outcome-card__icon">&bull;</span>
+        <h3>Relief</h3>
+        <p>The weight of not knowing is often heavier than the problem itself. You&rsquo;ll leave lighter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ───────────────────────────────────── -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="testimonials__header">
+      <span class="section-rule"></span>
+      <h2 class="fade-up">What parents say</h2>
     </div>
     <div class="testimonials__grid">
       <div class="testimonial fade-up">
-        <div class="testimonial__marks">&ldquo;</div>
-        <p class="testimonial__quote">I would pay anything if I could stop screaming at my son. After one session I had a phrase I could actually use in the moment. It worked the same day.</p>
-        <p class="testimonial__author">&mdash; Mother of a 6-year-old</p>
+        <span class="testimonial__mark">&ldquo;</span>
+        <p class="testimonial__quote">I walked in thinking my son was just being difficult. I walked out understanding exactly why he shuts down &mdash; and what I can do about it. The plan she gave me actually worked the next day.</p>
+        <div class="testimonial__author">
+          <strong>Sarah M.</strong>
+          <span>Parent of a 9-year-old</span>
+        </div>
       </div>
       <div class="testimonial fade-up">
-        <div class="testimonial__marks">&ldquo;</div>
-        <p class="testimonial__quote">I was crying secretly because I thought something was wrong with my child. Sharon helped me see what was actually happening. The relief was immediate.</p>
-        <p class="testimonial__author">&mdash; Father of a 7-year-old</p>
+        <span class="testimonial__mark">&ldquo;</span>
+        <p class="testimonial__quote">I&rsquo;ve read every parenting book. Nothing clicked until this conversation. She saw things I couldn&rsquo;t see because I was too close to it. Worth every minute.</p>
+        <div class="testimonial__author">
+          <strong>James T.</strong>
+          <span>Parent of a 12-year-old</span>
+        </div>
       </div>
       <div class="testimonial fade-up">
-        <div class="testimonial__marks">&ldquo;</div>
-        <p class="testimonial__quote">I walked in thinking I was a horrible mum. I walked out understanding my daughter in a way I never had before. This is not like any parenting advice I have read.</p>
-        <p class="testimonial__author">&mdash; Mother of a 5-year-old</p>
+        <span class="testimonial__mark">&ldquo;</span>
+        <p class="testimonial__quote">My daughter has ADHD and I was at my wit&rsquo;s end. The session helped me stop fighting the way her brain works and start working with it. Genuinely changed our relationship.</p>
+        <div class="testimonial__author">
+          <strong>Priya K.</strong>
+          <span>Parent of an 8-year-old</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="trust">
-  <div class="container container--narrow">
-    <div class="trust__inner fade-up">
-      <h2>For parents who:</h2>
-      <ul class="trust__list">
-        <li>Feel overstimulated often</li>
-        <li>Carry invisible mental load</li>
-        <li>Have a sensitive or complex child</li>
-        <li>Are tired of guilt cycles</li>
-      </ul>
-      <p class="trust__closing">You do not need to become someone else.<br>You need support returning to yourself.</p>
-    </div>
-  </div>
-</section>
-
-<section class="about" id="about">
-  <div class="container container--split container--split-reverse">
-    <div class="about__content fade-up">
-      <span class="section-label">Why this exists</span>
-      <h2>This work comes from the inside.</h2>
-      <p>I have worked inside classrooms and watched children get labelled before anyone understood what they actually needed. I have seen how sensory differences and learning styles become "problems" when they are simply differences.</p>
-      <p>I do not just look at the moment in front of us. I see the long tail &mdash; what happens across the whole education period when a child is misunderstood, and what becomes possible when they are truly seen.</p>
-      <p>This work also comes from lived experience: health challenges, criticism, and seeing what happens when labels replace understanding.</p>
-      <p>I built this because parents do not need more pressure. <strong>They need relief, clarity, and a way to reconnect with their child without losing themselves.</strong></p>
-      <p class="about__name">&mdash; Sharon</p>
-    </div>
-    <div class="about__image fade-up fade-up--delay">
-      <div class="about__img-frame">
-        <div class="about__img-placeholder">
-          <div class="about__img-placeholder-inner">
-            <span class="about__img-placeholder-icon">&#127807;</span>
-            <span>Sharon's photo<br>coming soon</span>
+<!-- ── FAQ ────────────────────────────────────────────── -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq__grid">
+      <div class="faq__intro">
+        <span class="section-rule"></span>
+        <h2 class="fade-up">Questions parents ask</h2>
+        <p class="fade-up">If you don&rsquo;t see your question here, include it in your enquiry and I&rsquo;ll answer it directly.</p>
+      </div>
+      <div class="faq__list fade-up">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Who is this session for?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>This is for parents who feel like they&rsquo;ve tried everything &mdash; consequences, rewards, talking, ignoring &mdash; and nothing is sticking. If you&rsquo;re exhausted and confused by your child&rsquo;s behaviour, this session is designed for you.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            What happens in the 60 minutes?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>We start by mapping what&rsquo;s actually happening &mdash; not just the surface behaviour, but the patterns underneath. Then we identify the specific mix of factors at play for your child, and you leave with a clear, practical plan you can start using immediately.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            Do I need to prepare anything?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Just come with a specific situation or pattern that&rsquo;s been frustrating you. The more concrete, the better. No forms, no homework &mdash; just a real conversation.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            How is this different from therapy?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>This is coaching, not therapy. We&rsquo;re not looking at the past or diagnosing anything. We&rsquo;re looking at what&rsquo;s happening right now and what you can change today. It&rsquo;s practical, forward-focused, and action-oriented.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            What if my child has a diagnosis?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Many of the parents I work with have children with ADHD, anxiety, sensory processing differences, or learning profiles. My background in classroom education means I understand how these factors interact &mdash; and how to work with them, not against them.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            How do I book?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Fill in the booking form below. I&rsquo;ll reply within 24 hours to confirm your spot. Sessions are limited, so reach out soon.</p>
           </div>
         </div>
       </div>
@@ -237,205 +325,182 @@
   </div>
 </section>
 
-<section class="faq" id="faq">
-  <div class="container container--narrow">
-    <div class="faq__header fade-up">
-      <span class="section-label">Common questions</span>
-      <h2>Questions parents ask</h2>
-      <p class="faq__subhead">If you don't see your question here, include it in your enquiry and I'll answer it directly.</p>
-    </div>
-    <div class="faq__list fade-up" role="list">
-      <div class="faq__item" role="listitem">
-        <button class="faq__question" aria-expanded="false">
-          <span>Who is this session for?</span>
-          <span class="faq__icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq__answer" hidden>
-          <p>This session is for parents of children aged 5&ndash;8 who feel stuck in a cycle of shouting, guilt, and disconnection. It is especially for parents of sensitive, intense, or differently-wired children who have tried the usual advice and found it doesn't hold.</p>
-          <p>If you often feel overstimulated, carry invisible mental load, and wonder whether something is wrong with your child or with your parenting &mdash; this is for you.</p>
-        </div>
-      </div>
-      <div class="faq__item" role="listitem">
-        <button class="faq__question" aria-expanded="false">
-          <span>What happens in the 60 minutes?</span>
-          <span class="faq__icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq__answer" hidden>
-          <p>We start with the friction point &mdash; the exact moment that keeps breaking you. You tell me what it is, and I listen without judgement.</p>
-          <p>Then we name the wish: what you want to happen instead. Then we look at the fear underneath it all.</p>
-          <p>From there, I give you a personalised method to reconnect with your child in that specific moment &mdash; and a way to interrupt the yelling cycle before it takes over. Most parents feel the shift during the session itself.</p>
-        </div>
-      </div>
-      <div class="faq__item" role="listitem">
-        <button class="faq__question" aria-expanded="false">
-          <span>Do I need to prepare anything?</span>
-          <span class="faq__icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq__answer" hidden>
-          <p>Just come with one real situation &mdash; the moment that keeps repeating. You do not need notes, a plan, or anything prepared in advance.</p>
-          <p>If you included your friction point in the booking form, I will have read it before we meet and we can get straight into the work.</p>
-        </div>
-      </div>
-      <div class="faq__item" role="listitem">
-        <button class="faq__question" aria-expanded="false">
-          <span>How is this different from therapy?</span>
-          <span class="faq__icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq__answer" hidden>
-          <p>Therapy often looks at your past. This looks at the moment in front of you right now.</p>
-          <p>We are not diagnosing your child, working through your childhood, or building a long-term treatment plan. We are identifying the specific situation that is breaking you and giving you something practical to use immediately.</p>
-          <p>This is not therapy. It is a reset &mdash; targeted, direct, and focused on relief you can feel today.</p>
-        </div>
-      </div>
-      <div class="faq__item" role="listitem">
-        <button class="faq__question" aria-expanded="false">
-          <span>What if my child has a diagnosis?</span>
-          <span class="faq__icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq__answer" hidden>
-          <p>A diagnosis adds context &mdash; it does not change the approach. I work with parents of children with sensory processing differences, ADHD, autism spectrum profiles, anxiety, and learning differences.</p>
-          <p>Understanding how your child's nervous system works is exactly the kind of insight this session provides. This work starts from understanding, not from the label.</p>
-        </div>
-      </div>
-      <div class="faq__item" role="listitem">
-        <button class="faq__question" aria-expanded="false">
-          <span>How do I book?</span>
-          <span class="faq__icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq__answer" hidden>
-          <p>Fill in the booking form on this page and complete payment via Stripe. You will then be taken to a scheduling page to choose your session time.</p>
-          <p>All sessions are 60 minutes on Google Meet. You will receive a confirmation email with your link. If you have any questions before booking, include them in the form and I will reply within 24 hours.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta-strip">
-  <div class="container container--narrow">
-    <div class="cta-strip__inner fade-up">
-      <h2>You do not have to keep repeating this.</h2>
-      <p>Come with one real situation. We will reset it together.</p>
-      <a href="#booking" class="btn btn--primary">Book your reset session</a>
-    </div>
-  </div>
-</section>
-
+<!-- ── BOOKING ─────────────────────────────────────────── -->
 <section class="booking" id="booking">
-  <div class="container container--narrow">
-    <div class="booking__header fade-up">
-      <span class="section-label">Book your session</span>
-      <h2>One session. Real shift.</h2>
-      <p>60 minutes &middot; Google Meet &middot; <strong>SGD <span class="price-display">180</span></strong></p>
-      <p class="booking__subtext">Fill in your details below &mdash; you will choose your time after payment.</p>
-    </div>
-    <form class="booking__form fade-up" id="bookingForm" novalidate>
-      <div class="form__row form__row--split">
-        <div class="form__group">
-          <label for="parentName">Your name <span class="form__required">*</span></label>
-          <input type="text" id="parentName" name="parentName" placeholder="Your first and last name" required autocomplete="name">
-        </div>
-        <div class="form__group">
-          <label for="childName">Your child's name <span class="form__required">*</span></label>
-          <input type="text" id="childName" name="childName" placeholder="Your child's first name" required>
-        </div>
-      </div>
-      <div class="form__row form__row--split">
-        <div class="form__group">
-          <label for="email">Email address <span class="form__required">*</span></label>
-          <input type="email" id="email" name="email" placeholder="you@email.com" required autocomplete="email">
-        </div>
-        <div class="form__group">
-          <label for="phone">Phone number <span class="form__required">*</span></label>
-          <input type="tel" id="phone" name="phone" placeholder="+65 xxxx xxxx" required autocomplete="tel">
-        </div>
-      </div>
-      <div class="form__row">
-        <div class="form__group">
-          <label for="childAge">Your child's age <span class="form__required">*</span></label>
-          <select id="childAge" name="childAge" required>
-            <option value="">Select age...</option>
-            <option value="5">5 years old</option>
-            <option value="6">6 years old</option>
-            <option value="7">7 years old</option>
-            <option value="8">8 years old</option>
-          </select>
-        </div>
-      </div>
-      <div class="form__row">
-        <div class="form__group">
-          <label for="frictionPoint">In one sentence &mdash; what is the moment that keeps breaking you?</label>
-          <textarea id="frictionPoint" name="frictionPoint" placeholder="e.g. Every morning before school turns into a meltdown and I end up screaming..." rows="3"></textarea>
-          <span class="form__hint">Optional &mdash; but helpful for Sharon to prepare</span>
-        </div>
-      </div>
-      <div class="form__error" id="formError" role="alert" aria-live="polite"></div>
-      <div class="form__submit">
-        <button type="submit" class="btn btn--primary btn--large" id="checkoutBtn">
-          Book &amp; pay to confirm &mdash; SGD <span class="price-display">180</span>
-        </button>
-        <p class="form__trust">&#128274; Secure payment via Stripe &middot; You will schedule your time after payment</p>
-      </div>
-    </form>
-  </div>
-</section>
-
-<section class="final-cta">
-  <div class="container container--narrow">
-    <div class="final-cta__inner fade-up">
-      <h2>You can reset in the middle of the day.<br><em>Not just after it ends.</em></h2>
-      <button class="btn btn--white" id="openChatbot3">Start your 3-minute reset</button>
-      <p>Less than 3 minutes. No perfection required.</p>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
   <div class="container">
-    <div class="footer__inner">
-      <p class="footer__brand">Parent Reset</p>
-      <p class="footer__tagline">Relief, clarity, and a way back to your child.</p>
-      <div class="footer__links">
-        <a href="mailto:sharon@parentreset.com">sharon@parentreset.com</a>
-        <span aria-hidden="true">&middot;</span>
-        <a href="#booking">Book a session</a>
+    <div class="booking__header">
+      <span class="section-rule"></span>
+      <h2 class="fade-up">Ready to stop guessing?</h2>
+      <p class="fade-up">Sessions are limited &mdash; I work with a small number of families at a time so I can give each one my full attention.</p>
+    </div>
+    <div class="booking__layout">
+      <div class="booking__sidebar fade-up">
+        <div class="booking__what-to-expect">
+          <h3>What to expect</h3>
+          <div class="expect-item">
+            <span class="expect-item__icon">&#9675;</span>
+            <div>
+              <strong>I&rsquo;ll read your message carefully</strong>
+              <p>Not a form response. I personally review every enquiry and reply with a specific response to your situation.</p>
+            </div>
+          </div>
+          <div class="expect-item">
+            <span class="expect-item__icon">&#9672;</span>
+            <div>
+              <strong>You&rsquo;ll get a reply within 24 hours</strong>
+              <p>I&rsquo;ll confirm your spot, share a link, and let you know if I have any questions before we start.</p>
+            </div>
+          </div>
+          <div class="expect-item">
+            <span class="expect-item__icon">&#9671;</span>
+            <div>
+              <strong>No pressure, no hard sell</strong>
+              <p>If I don&rsquo;t think I can help you, I&rsquo;ll tell you honestly. I&rsquo;d rather point you in the right direction than take your time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="booking__included-card">
+          <p class="booking__included-quote">&ldquo;You&rsquo;ll leave with a clear plan you can use right away.&rdquo;</p>
+          <ul class="booking__included-list">
+            <li><span class="check">&#10003;</span> 60 minutes, fully focused on your situation</li>
+            <li><span class="check">&#10003;</span> Conducted via Google Meet</li>
+            <li><span class="check">&#10003;</span> Limited spots &mdash; first come, first served</li>
+            <li><span class="check">&#10003;</span> No diagnosis, no judgement</li>
+          </ul>
+        </div>
       </div>
-      <p class="footer__legal">&copy; 2026 Parent Reset. All rights reserved.</p>
+      <div class="booking__form-wrap fade-up">
+        <form id="bookingForm" novalidate class="booking__form">
+          <div class="booking__form-header">
+            <h3>Book &amp; confirm your session</h3>
+            <p>All fields marked <span class="req">*</span> are required.</p>
+          </div>
+          <div id="formError" class="form__error" role="alert"></div>
+          <div class="form__row form__row--split">
+            <div class="form__group">
+              <label for="parentName">Your name <span class="req">*</span></label>
+              <input type="text" id="parentName" name="parentName" autocomplete="name" placeholder="First and last name">
+            </div>
+            <div class="form__group">
+              <label for="childName">Child&rsquo;s name <span class="req">*</span></label>
+              <input type="text" id="childName" name="childName" placeholder="First name">
+            </div>
+          </div>
+          <div class="form__row form__row--split">
+            <div class="form__group">
+              <label for="email">Email address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+            </div>
+            <div class="form__group">
+              <label for="phone">Phone number <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+65 ...">
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="childAge">Child&rsquo;s age <span class="req">*</span></label>
+              <select id="childAge" name="childAge">
+                <option value="" disabled selected>Select age range</option>
+                <option value="4-6">4&ndash;6 years old</option>
+                <option value="7-9">7&ndash;9 years old</option>
+                <option value="10-12">10&ndash;12 years old</option>
+                <option value="13-15">13&ndash;15 years old</option>
+                <option value="16+">16 and older</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="frictionPoint">What&rsquo;s been happening? <span class="req">*</span></label>
+              <p class="form__hint">Describe the specific behaviour or pattern that&rsquo;s been frustrating you. The more specific, the better.</p>
+              <textarea id="frictionPoint" name="frictionPoint" rows="4"
+                placeholder="e.g. My 9-year-old completely shuts down when I ask him to do homework..."></textarea>
+            </div>
+          </div>
+          <div class="form__submit">
+            <button type="submit" id="checkoutBtn" class="btn btn--primary btn--large btn--full">
+              Book &amp; pay to confirm &mdash; SGD <span class="price-display">180</span>
+            </button>
+            <p class="form__trust">&#128274; Secure payment via Stripe &middot; No commitment required &middot; I&rsquo;ll reply within 24 hours</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__cols">
+      <div class="footer__brand-col">
+        <h3 class="footer__brand">Parent Reset</h3>
+        <p class="footer__tagline">60-minute coaching sessions for parents who want to understand what&rsquo;s really happening &mdash; and what to change.</p>
+      </div>
+      <div class="footer__nav-col">
+        <h4 class="footer__col-heading">Navigate</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#testimonials">Parent Stories</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#booking">Book a Session</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact-col">
+        <h4 class="footer__col-heading">Get in Touch</h4>
+        <p>Sessions are limited. If you&rsquo;re ready to get clarity on what&rsquo;s happening with your child, reach out now.</p>
+        <a href="#booking" class="btn btn--outline-light">Book a Session</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="footerYear"></span> Parent Reset Coaching. All rights reserved.</p>
+      <p>Sessions conducted via Google Meet</p>
     </div>
   </div>
 </footer>
 
-<div class="sticky-bar" id="stickyBar" aria-hidden="true">
-  <a href="#booking" class="sticky-bar__btn">Book a session</a>
-  <button class="sticky-bar__close" id="stickyBarClose" aria-label="Dismiss">&times;</button>
+<!-- ── STICKY BAR ─────────────────────────────────────── -->
+<div id="stickyBar" class="sticky-bar" aria-hidden="true">
+  <div class="sticky-bar__text">
+    <strong>Limited spots this week</strong>
+    <span>60-minute Google Meet session &middot; Clear plan you can use right away</span>
+  </div>
+  <div class="sticky-bar__actions">
+    <a href="#booking" class="btn btn--primary btn--sm">Book a Session</a>
+    <button id="stickyBarClose" class="sticky-bar__close" aria-label="Dismiss">&times;</button>
+  </div>
 </div>
 
-<div class="chatbot" id="chatbot" aria-hidden="true" role="dialog" aria-label="3-Minute Reset with Sharon">
-  <div class="chatbot__backdrop" id="chatbotBackdrop"></div>
-  <div class="chatbot__panel" id="chatbotPanel">
+<!-- ── CHATBOT TRIGGER ────────────────────────────────── -->
+<button id="chatbotTrigger" class="chatbot__trigger" aria-label="Start 3-minute reset">
+  <span class="chatbot__trigger-icon">&#128172;</span>
+  <span class="chatbot__trigger-label">3-min reset</span>
+</button>
+
+<!-- ── CHATBOT PANEL ──────────────────────────────────── -->
+<div id="chatbot" class="chatbot" aria-hidden="true" aria-modal="true" role="dialog" aria-label="Guided reset chat">
+  <div id="chatbotBackdrop" class="chatbot__backdrop"></div>
+  <div class="chatbot__panel">
     <div class="chatbot__header">
       <div class="chatbot__header-info">
-        <div class="chatbot__avatar" aria-hidden="true">S</div>
+        <div class="chatbot__avatar">PR</div>
         <div>
-          <p class="chatbot__name">Sharon's 3-Minute Reset</p>
-          <p class="chatbot__status">&#9679; Available now</p>
+          <div class="chatbot__name">Parent Reset</div>
+          <div class="chatbot__status">&#9679; Here with you</div>
         </div>
       </div>
-      <button class="chatbot__close" id="closeChatbot" aria-label="Close">&times;</button>
+      <button id="closeChatbot" class="chatbot__close" aria-label="Close chat">&times;</button>
     </div>
-    <div class="chatbot__messages" id="chatbotMessages" aria-live="polite"></div>
-    <div class="chatbot__input-area" id="chatbotInputArea">
-      <input type="text" class="chatbot__input" id="chatbotInput" placeholder="Type your answer..." autocomplete="off" aria-label="Your response">
-      <button class="chatbot__send" id="chatbotSend" aria-label="Send">&rarr;</button>
+    <div id="chatbotMessages" class="chatbot__messages"></div>
+    <div id="chatbotInputArea" class="chatbot__input-area" style="display:none">
+      <input id="chatbotInput" class="chatbot__input" type="text" placeholder="Type your answer..." aria-label="Your answer">
+      <button id="chatbotSend" class="chatbot__send" aria-label="Send">&#10148;</button>
     </div>
   </div>
 </div>
 
-<button class="chatbot__trigger" id="chatbotTrigger" aria-label="Start 3-minute reset">
-  <span class="chatbot__trigger-icon" aria-hidden="true">&#128172;</span>
-  <span class="chatbot__trigger-label">3-min reset</span>
-</button>
-
+<script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
 <script src="script.js"></script>
 </body>
 </html>
